@@ -48,6 +48,14 @@ var app = {
     {
       url: 'openai',
       checkImg: 'https://images.openai.com/blob/7ef54590-0045-4fb6-9f03-9643e08f0d94/stangel-2022-0423.jpg'
+    },
+    {
+      url: 'bangumi',
+      checkImg: 'https://bgm.tv/img/favicon.ico'
+    },
+    {
+      url: 'pixiv',
+      checkImg: 'https://source.pixiv.net/www/images/beta/pixiv_logo.png'
     }
   ]
   window.time = Date.now();
