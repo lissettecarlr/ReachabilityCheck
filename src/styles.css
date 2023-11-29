@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  font-family: Sans-Serif;
+}
+img {
+  width: 0;
+  visibility: hidden;
+}
+h1,
+p {
+  text-align: center;
+}
+table {
+  width: 100%;
+  margin: auto auto 2em;
+}
+.url {
+  width: 60%;
+}
+.id,
+.status {
+  width: 20%;
+}
+td,
+th {
+  padding-left: 2%;
+  height: 1.5em;
+  background-color: #d3d3d3;
+}
+th {
+  background-color: #add8e6;
+  text-align: left;
+}
+.reachable td {
+  background-color: #90ee90;
+}
+.unreachable td {
+  background-color: #f08080;
+}

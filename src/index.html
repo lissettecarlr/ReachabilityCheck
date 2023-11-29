@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="author" content="flowmemo" />
+    <title>检测</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>检测访问</h1>
+    
+    <table>
+      <tr>
+        <th class="id">No.</th>
+        <th class="url">目标</th>
+        <th class="status">结果</th>
+      </tr>
+    </table>
+
+    <script id="tbody" type="text/template">
+        <tr>
+              <td>@@id@@</td>
+              <td>@@url@@</td>
+              <!-- <td>
+                  <a href="@@url@@" target="_blank">
+                    @@url@@
+                  </a>
+              </td> -->
+              <td> <img src="@@checkImg@@?p=@@nocache@@" onload="app.success(this)"
+                  onerror="app.fail(this)">loading...</td>
+        </tr>
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
