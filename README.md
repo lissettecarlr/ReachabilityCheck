@@ -26,6 +26,6 @@
         status: ''
     }
 ```
-其中icon图标在[getbootstrap](https://icons.getbootstrap.com/)中选取
+其中icon图标在[getbootstrap](https://icons.getbootstrap.com/)中选取。
 url和之前那个版本一样，也是选取目标站点中的一个图片，通过加载图片来判断连通性。
 

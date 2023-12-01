@@ -314,7 +314,22 @@ new Vue({
                 icon: 'easel3-fill',
                 url: 'https://source.pixiv.net/www/images/beta/pixiv_logo.png?',
                 status: ''
-            }     
+            },     
+            {
+                id: 'bangumi',
+                name: 'bangumi',
+                icon: 'outlet',
+                url: 'https://bgm.tv/img/favicon.ico?',
+                status: ''
+            },
+            {
+                id: 'acg.rip',
+                name: 'acg.rip',
+                icon: 'easel3-fill',
+                url: 'https://acg.rip/favicon.ico?',
+                status: ''
+            } 
+  
         ],
         stunServers: [
             {
