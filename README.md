@@ -1,23 +1,31 @@
 # 可达性检测
 
+
 ## 说明
 
-该工具是用来检测对一些特定网站的访问情况。由于目前使用的代理会出现节点1能够访问A、B但是不能访问C，节点2能够访问A、C但是不能访问B的这种无语情况，所以有了这个工具。
+偶然发现了更好的开源项目[MyIP](https://github.com/lissettecarlr/ReachabilityCheck/releases)，之前版本宣告破产，之后该仓库将使用MyIP，进行一些私有化修改。
 
-如果你想持续监控，也有部署条件，当然选择[uptime-kuma
-](https://blog.kala.love/posts/3899fa8b/)更加合适。
-
-## 使用
-
-进入src目录，双击`index.html`即可。
-
+[历史版本](https://github.com/lissettecarlr/ReachabilityCheck/releases)，界面如下图:
 ![image-1](file/1.gif)
 
+[当前版本]()，界面如下图：
 
-## 配置
+![image-2](file/2.png)
+![image-2](file/3.png)
 
-该工具是根据[can-i-reach-google](https://github.com/flowmemo/can-i-reach-google)修改
 
-需要增加网站就直接在`script.js`中的`rows`变量中添加即可。其中checkImg是目标网站中的随便一张图片，就是通过加载它来判断是否能够访问。而url只是显示的名称而已。
+## 修改连通性测试的站点
 
+在`src/res/app.js`中修改`connectivityTests`，示例如下：
+```js
+    {
+        id: 'HuggingFace',
+        name: 'HuggingFace',
+        icon: 'ticket-detailed-fill',
+        url: 'https://huggingface.co/front/assets/huggingface_logo-noborder.svg?',
+        status: ''
+    }
+```
+其中icon图标在[getbootstrap](https://icons.getbootstrap.com/)中选取
+url和之前那个版本一样，也是选取目标站点中的一个图片，通过加载图片来判断连通性。
 
