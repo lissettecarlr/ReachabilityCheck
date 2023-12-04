@@ -29,3 +29,41 @@
 其中icon图标在[getbootstrap](https://icons.getbootstrap.com/)中选取。
 url和之前那个版本一样，也是选取目标站点中的一个图片，通过加载图片来判断连通性。
 
+## 使用docker运行
+
+生成镜像
+```bash
+sudo docker build -t reachability-check .
+```
+
+启动容器
+```bash
+sudo docker run -d -p 2222:80 reachability-check
+```
+
+访问`127.0.0.1:2222`
+
+
+## 上传镜像到hub
+
+生成需要上传的镜像，名字格式:`<your-dockerhub-username>/<image-name>:<tag>`
+```bash
+sudo docker build -t lissettecarlr/reachability-check:v0.1 .
+```
+
+登录hub
+```bash
+docker login
+```
+
+上传镜像
+```bash
+sudo docker push lissettecarlr/reachability-check:v0.1
+```
+
+后续迭代
+```bash
+sudo docker build -t lissettecarlr/reachability-check:v0.2 .
+sudo docker tag lissettecarlr/reachability-check:v0.1 lissettecarlr/reachability-check:v0.2
+sudo docker push lissettecarlr/reachability-check:v0.2
+```
