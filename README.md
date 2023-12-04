@@ -44,7 +44,14 @@ sudo docker run -d -p 2222:80 reachability-check
 访问`127.0.0.1:2222`
 
 
+可以直接使用我的镜像
+```bash
+sudo docker run -d -p 2222:80 lissettecarlr/reachability-check:latest --name reachability
+```
+
+
 ## 上传镜像到hub
+如果想在自定义镜像后，方便其他设备使用，则可以将镜像上传到自己的hub
 
 生成需要上传的镜像，名字格式:`<your-dockerhub-username>/<image-name>:<tag>`
 ```bash
