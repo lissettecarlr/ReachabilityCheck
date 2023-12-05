@@ -311,7 +311,7 @@ new Vue({
             {
                 id: 'pixiv',
                 name: 'pixiv',
-                icon: 'easel3-fill',
+                icon: 'images',
                 url: 'https://source.pixiv.net/www/images/beta/pixiv_logo.png?',
                 status: ''
             },     
@@ -325,11 +325,32 @@ new Vue({
             {
                 id: 'acg.rip',
                 name: 'acg.rip',
-                icon: 'easel3-fill',
+                icon: 'search',
                 url: 'https://acg.rip/favicon.ico?',
                 status: ''
-            } 
-  
+            },
+            {
+                id: 'mangabz',
+                name: 'mangabz',
+                icon: 'book-fill',
+                url: 'https://css.mangabz.com/v202303131713/mangabz/images/logo_mangabz.png?',
+                status: ''
+            },
+            {
+                id: 'manhuagui',
+                name: 'manhuagui',
+                icon: 'book-fill',
+                url: 'https://cf.mhgui.com/cpic/b/7580.jpg?',
+                status: ''
+            },
+            {
+                id: 'baozimh',
+                name: 'baozimh',
+                icon: 'book-fill',
+                url: 'https://cn.baozimh.com//favicon.ico?',
+                status: ''
+            }  
+            
         ],
         stunServers: [
             {
