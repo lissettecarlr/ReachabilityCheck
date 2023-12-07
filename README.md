@@ -46,7 +46,7 @@ sudo docker run -d -p 2222:80 reachability-check
 
 可以直接使用我的镜像
 ```bash
-sudo docker run -d -p 2222:80 lissettecarlr/reachability-check:latest --name reachability
+sudo docker run -d -p 2222:80 lissettecarlr/reachability-check:latest
 ```
 
 
@@ -55,7 +55,7 @@ sudo docker run -d -p 2222:80 lissettecarlr/reachability-check:latest --name rea
 
 生成需要上传的镜像，名字格式:`<your-dockerhub-username>/<image-name>:<tag>`
 ```bash
-sudo docker build -t lissettecarlr/reachability-check:v0.1 .
+sudo docker build -t lissettecarlr/reachability-check:latest .
 ```
 
 登录hub
@@ -65,7 +65,7 @@ docker login
 
 上传镜像
 ```bash
-sudo docker push lissettecarlr/reachability-check:v0.1
+sudo docker push lissettecarlr/reachability-check:latest
 ```
 
 后续迭代
